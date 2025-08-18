@@ -18,6 +18,7 @@ ENV/
 env/
 .ml-env/
 *.venv/
+ml-env/
 
 # =========================
 # Jupyter Notebooks
@@ -58,3 +59,9 @@ data/interim/
 # =========================
 .DS_Store
 Thumbs.db
+
+
+# System-wide site-packages
+lib/
+Lib/
+Lib64/
