@@ -5,7 +5,7 @@ It uses **pandas** for data handling, **scikit-learn** for machine learning, and
 
 ---
 
-## Installation
+## Installation for V1
 
 ### 1. Clone this repository
 ```bash
@@ -27,6 +27,43 @@ pip install -r requirements.txt
 ```
 
 ---
+
+
+## Installation for V2 (XGBoost + Added Features)
+
+### 1. Clone this repository (if not already done)
+```bash
+git clone https://github.com/apaliwal3/Premier_League_Predictor.git
+cd Premier_League_Predictor
+```
+
+### 2. (Recommended) Create and activate a virtual environment
+```bash
+python3 -m venv ml-env
+source ml-env/bin/activate       # Mac/Linux
+ml-env\Scripts\activate        # Windows (PowerShell)
+```
+
+### 3. Install dependencies (including XGBoost)
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+If you encounter issues with XGBoost on Mac, you may need to install OpenMP:
+```bash
+brew install libomp
+```
+
+### 4. Run the predictor (V2)
+```bash
+python3 pl_predictor_V2.py --home "Team Name" --away "Team Name"
+# Example:
+python3 pl_predictor_V2.py --home "Man United" --away "Arsenal"
+```
+
+This will print the predicted outcome and probabilities for the specified match using the enhanced feature set and XGBoost model.
+
 
 ## Data
 
